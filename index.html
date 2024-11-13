@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <!-- Tombol untuk membuka sidebar -->
+    <div class="tombol bg-dark" style="position: sticky">
+      <a href="#modal">
+        <div class="burger">
+          <svg xmlns="http://www.w3.org/2000/svg" width="2rvw" height="2vw" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="color: white">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            Menu
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <!-- Overlay dan sidebar menggunakan :target -->
+    <div id="modal">
+      <a href="#" class="modal-overlay"></a>
+      <!-- Link untuk menutup sidebar saat klik di luar -->
+      <div class="sidebar">
+        <h2>SMPN 4 Malang</h2>
+        <a href="index.html">Beranda</a>
+
+        <!-- Dropdown untuk Services -->
+        <div class="dropdown" id="services">
+          <a href="#services" class="dropdown-toggle">Profil</a>
+          <div class="dropdown-content">
+            <a href="#">Sambutan Kepala Sekolah</a>
+            <a href="Profil.VisiMisi.html">Visi & Misi</a>
+            <a href="#">Data Guru dan Karyawan</a>
+          </div>
+        </div>
+
+        <div class="dropdown" id="services">
+          <a href="#services" class="dropdown-toggle">Siswa</a>
+          <div class="dropdown-content">
+            <a href="#">Ekstrakulikuler</a>
+            <a href="#">tatib</a>
+          </div>
+        </div>
+
+        <div class="dropdown" id="services">
+          <a href="#services" class="dropdown-toggle">Informasi Sekolah</a>
+          <div class="dropdown-content">
+            <a href="#">Fasilitas</a>
+            <a href="#">Kontak</a>
+            <a href="#">Prestasi</a>
+          </div>
+        </div>
+
+        <div class="dropdown" id="services">
+          <a href="#services" class="dropdown-toggle">Gallery</a>
+          <div class="dropdown-content">
+            <a href="#">Foto</a>
+            <a href="#">Vidio</a>
+          </div>
+        </div>
+        <a href="#">Berita</a>
+
+        <a href="#" class="close-btn">Close Sidebar</a>
+      </div>
+    </div>
+
+    <div class="header-navbar">
+      <img src= "FOTO/Halaman (2)1.png" alt="" class="img-fluid" />
+      <div class="centered">
+        <h1 class="mb-0" style="font-size: 4vw; color: #fff">
+          <b>Selamat Datang<br />SMPN 4 Malang</b>
+        </h1>
+      </div>
+    </div>
+
+    <div class="header-sekolah">
+      <div class="logo-navbar"><img src="FOTO/picture1_2.png" alt="" /></div>
+      <div class="top-right"><b>SMPN 4 Malang</b></div>
+    </div>
+
+    <!-- Content -->
+    <div class="head-berita">
+  <p>Berita</p>
+</div>
+
+<div class="isi-berita">
+  <div class="berita1">
+    <img src="FOTO/image_5.png" class="img-fluid" alt="Upacara" />
+    <div class="judul1">
+      <p>Upacara HUT RI ke 77 SMPN 4 Malang</p>
+    </div>
+    <div class="tanggal1">
+      <p>Rabu, 17 Agustus 2022</p>
+    </div>
+    <div class="isi1">
+      Upacara memperingati Hari Kemerdekaan Indonesia yang ke 77 pada hari Rabu 17 Agustus 2022
+    </div>
+  </div>
+
+  <div class="berita2">
+    <img src="FOTO/image_8.png" class="img-fluid" alt="Upacara" />
+    <div class="judul2">
+      <p>Pemilihan Ketua Osis</p>
+    </div>
+    <div class="tanggal2">
+      <p>Kamis, 18 September 2022</p>
+    </div>
+    <div class="isi2">
+      Pemilihan Ketua Osis SMPN 4 Malang dilaksanakan pada Kamis 8 September 2022
+    </div>
+  </div>
+
+  <div class="berita3">
+    <img src="FOTO/image_15.png" class="img-fluid" alt="Hari Anak Nasional" />
+    <div class="judul3">
+      <p>Hari Anak Nasional</p>
+    </div>
+    <div class="tanggal3">
+      <p>Senin, 25 Juli 2022</p>
+    </div>
+    <div class="isi3">
+      SMP Negeri 4 Malang mengadakan Quiz Ranking 1 dalam rangka memperingati Hari Anak Nasional. Para siswa berlomba-lomba untuk menjawab Quiz, sehingga menyisakan 3 terbaik sebagai pemenang.
+    </div>
+  </div>
+</div>
+
+    
+
+    <!-- Footer -->
+    <header class="bg-secondary py-3 text-center">
+      <div class="container d-flex align-items-center justify-content-center">
+        <img src="FOTO/picture1_2.png" alt="Logo" class="logo-image me-2" />
+        <h1 class="mb-0" style="font-size: 2vw; color: #ffffff"><b>SMPN 4 Malang</b></h1>
+      </div>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Accommodation</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Local Attraction</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Social Media Icons -->
+    <div class="text-center mt-3">
+      <a href="https://www.facebook.com/arvegatu.esempeempat" target="_blank" class="mx-2 text-dark" style="font-family: 'Poppins'"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/smpn4.malang/" target="_blank" class="mx-2 text-dark"><i class="bi bi-instagram"></i></a>
+      <a href="https://x.com/arvegatu371" target="_blank" class="mx-2 text-dark"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.youtube.com/@smpn4malangofficial479" target="_blank" class="mx-2 text-dark"><i class="bi bi-youtube"></i></a>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="container text-center mt-3">
+      <div class="row justify-content-center">
+        <div class="p-1 col-auto d-flex align-items-center"><i class="bi bi-geo-alt"></i> Jl. Contoh Alamat No.123, Kota ABC</div>
+        <div class="p-1 col-auto d-flex align-items-center"><i class="bi bi-telephone-fill"></i> +62 812 3456 7890</div>
+        <div class="p-1 col-auto d-flex align-items-center"><i class="bi bi-envelope-fill"></i> email@example.com</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center">
+      <p class="p-3" style="font-size: 0.9vw; margin-bottom: -1rem">All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
