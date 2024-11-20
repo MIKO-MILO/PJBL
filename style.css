@@ -2,28 +2,9 @@ body {
   font-family: 'Roboto',sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.open-btn {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 20px;
-}
-
-#modal .modal-overlay,
-#modal .sidebar {
-  display: none;
-}
-
-#modal:target .modal-overlay,
-#modal:target .sidebar {
-  display: block;
+  background-image: url(FOTO/Halaman\ \(2\)1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .modal-overlay {
@@ -38,18 +19,6 @@ body {
   transition: opacity 0.4s ease;
 }
 
-.open-btn {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 20px;
-}
-
 #modal .modal-overlay,
 #modal .sidebar {
   display: none;
@@ -58,18 +27,6 @@ body {
 #modal:target .modal-overlay,
 #modal:target .sidebar {
   display: block;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease;
 }
 
 #modal:target .modal-overlay {
@@ -77,18 +34,24 @@ body {
   visibility: visible;
 }
 
+#modal.active {
+  display: block;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 15vw;
   height: 100%;
   background-color: #2c3e50;
   color: white;
   padding: 20px;
   transform: translateX(-100%);
   opacity: 0;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  z-index: 1050;
+  overflow-y: auto;
 }
 
 #modal:target .sidebar {
@@ -164,52 +127,33 @@ body {
 }
 
 .tombol {
+margin-top: -13vw;
+width: 100%;
 height: 4vw;
+background-color: black;
+position: fixed;
+z-index: 1050;
 }
 
 .tombol .burger {
 float: left;
 padding: 1vw;
-}
-
-.header-navbar {
-margin-top: 1vw;
-padding: 0;
-}
-
-.header-navbar img {
-margin-top: -1vw;
-width: 100%;
-}
-
-.centered {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-size: 4vw;
-text-align: center;
-color: #fff;
+position: fixed;
 }
 
 .top-right {
-position: absolute;
+font-size: 1.5vw;
 font-family: 'Roboto';
 color: rgb(255, 255, 255);
-top: -5px;
-right: 16px;
-padding: 20px;
-font-size: 1.5vw;
-text-align: center;
+padding: 1vw;
 }
 
 .header-sekolah .logo-navbar img {
 width: 3vw;
 height: 3vw;
-position: absolute;
-top: 3px;
-right: 275px;
-margin-top: 0.3vw;
+position: fixed;
+right: 13vw;
+padding-top: 0.5vw;
 }
 
 /* Footer */
@@ -243,7 +187,7 @@ column-gap: 1vw;
 font-size: 2vw; 
 font-weight: bold;
 font-family: 'Roboto';
-margin-top: 10vw;
+margin-top: 2vw;
 }
 
 .head-berita::before {
@@ -366,4 +310,216 @@ padding-top: 5vw;
 margin-left: 24.2vw;
 margin-top: -5vw;
 padding-bottom: 10vw;
+}
+
+/* Sambutan Kepala Sekolah  */
+.kepsek {
+  padding: 13vw;
+  padding-top: 30vw;
+  padding-left: 18vw;
+  align-items: center;
+}
+
+.kepsek img {
+  width: 26vw;
+  height: 16vw;
+  margin-top: -2vw;
+}
+
+.kepsek .judul {
+  padding-left: 28vw;
+  margin-top: -16.3vw;
+  font-size: 2vw;
+}
+
+.kepsek .isi {
+  padding-left: 28vw;
+}
+
+/* Visi Misi */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 18vw;
+  padding-top: 30vw;
+  font-family: 'Roboto';
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.grid-itemmisi {
+  background-color: rgba(255, 132, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 1vw;
+  text-align: center;
+}
+
+.grid-itemvisi {
+  background-color: rgba(255, 132, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 1vw;
+  text-align: center;
+}
+.grid-itemtujuan {
+  background-color: rgba(255, 132, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 1vw;
+  text-align: center;
+  position: center;
+}
+
+
+/* Toko */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8vw;
+}
+
+.card {
+  width: 20vw;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 1vw;
+  transition: transform 0.5s ease;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card img {
+ width: 100%;
+ height: 18vw;
+ padding: 3vw;
+ margin-top: -1vw;
+}
+
+.card-content {
+  padding:2vw;
+}
+
+.card-content h3{
+  font-size: 1.5vw;
+  margin-bottom: 1.3vw;
+  margin-top: -2.5vw;
+}
+
+.card-content p{
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.card-content .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
+}
+
+/* Perpus */
+.container-perpus {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:200px;
+  padding-top: 30vw;
+}
+
+.cover-perpus {
+  width: 300px auto;
+  background-color: #f0f0f0;
+  border-radius: 0.3vw;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 1vw;
+  transition: transform 0.5s ease;
+}
+
+.cover-perpus:hover{
+  transform: scale(1.1);
+}
+
+.cover-perpus img {
+ width: 100%;
+ height: 18vw;
+ padding: 0vw;
+ border-radius: 0.3vw;
+}
+
+.content-perpus {
+  padding:2vw;
+}
+
+.content-perpus h3{
+  font-size: 1.2vw;
+  margin-bottom: 1.3vw;
+  margin-top: -1vw;
+}
+
+.content-perpus p{
+  color: #666;
+  font-size: 0.9vw;
+  line-height: 1.3;
+}
+
+/* Data Guru  */
+.data-guru .container {
+  padding: 3vw;
+  padding-top: 30vw;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Galery Foto  */
+.img-thumbnail {
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card {
+  position: absolute;
+  z-index: 1;
+}
+
+/* Tatib */
+.tatib .container-tatib {
+  padding: 17vw;
+  padding-top: 25vw;
+  align-items: center;
+}
+
+.custom-card {
+  width: 20vw;
+  height: 1vw;
+  margin: auto;
+  gap: 5vw;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+}
+
+.custom-card iframe {
+  display: block;
+  width: 460px;
+  height: 315px;
+  margin: auto;
+}
+
+.custom-card .card-body {
+  text-align: center;
 }
